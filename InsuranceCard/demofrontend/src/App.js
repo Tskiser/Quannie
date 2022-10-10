@@ -11,6 +11,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import ListStaff from './views/ListStaff';
 
 function App() {
   return (
@@ -35,6 +36,9 @@ function App() {
         {/* Create staff account form - Nam */}
         <Route path="/create-staff">
           <CreateStaff />
+        </Route>
+        <Route path="/list-staff">
+          <ListStaff />
         </Route>
         {/* Create login form - Nam */}
         {/* Create staff account form - Quan */}
