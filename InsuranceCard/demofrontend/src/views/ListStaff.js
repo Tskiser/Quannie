@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import '../styles/listStaff.scss';
+import Staff from './Staff';
 ListStaff.propTypes = {
-    
+    data: PropTypes.array,
 };
 
-function ListStaff(props) {
+ListStaff.defaultProps ={
+    data: [],
+}
+function ListStaff({data}) {
     return (
         <div>
         <table class="content-table">
@@ -20,14 +24,7 @@ function ListStaff(props) {
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Nam</td>
-                    <td>Male</td>
-                    <td>nampro2k2@gmail.com</td>
-                    <td>091238762</td>
-                    <td>thach that ha noi</td>
-                </tr>
+                
                 <tr class="active-row">
                     <td>2</td>
                     <td>Quang</td>
@@ -36,14 +33,11 @@ function ListStaff(props) {
                     <td>031267823</td>
                     <td>lien quan ha noi</td>
                 </tr>
-                <tr>
-                    <td>3</td>
-                    <td>DucAnh</td>
-                    <td>Female</td>
-                    <td>ducanh2k3@gmail.com</td>
-                    <td>312879312</td>
-                    <td>kim quan ha noi</td>
-                </tr>
+                {
+                    data.map((staff)=>(
+                        <Staff staff={staff}/>
+                    ))
+                }
             </tbody>
         </table>
     </div>
