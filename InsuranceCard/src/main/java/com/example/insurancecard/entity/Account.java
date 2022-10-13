@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Table(name = "tbl_account")
 @Entity
@@ -31,4 +32,7 @@ public class Account {
 
     @OneToOne(mappedBy = "account", cascade = CascadeType.ALL)
     private Information information;
+    @OneToMany(mappedBy = "account", cascade = CascadeType.ALL)
+    private List<MotorBike> motorBike;
+
 }

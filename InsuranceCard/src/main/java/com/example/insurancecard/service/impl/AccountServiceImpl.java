@@ -1,14 +1,11 @@
 package com.example.insurancecard.service.impl;
 
 import com.example.insurancecard.dto.AccountDto;
-import com.example.insurancecard.dto.EmployeeDto;
-import com.example.insurancecard.entity.Account;
-import com.example.insurancecard.entity.Employee;
 import com.example.insurancecard.repository.AccountRepository;
 import com.example.insurancecard.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
+import com.example.insurancecard.entity.Account;
 import java.util.ArrayList;
 import java.util.List;
 

@@ -6,10 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.springframework.format.annotation.DateTimeFormat;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.sql.Date;
 
 @Table(name = "tbl_motoBike")
@@ -36,5 +33,8 @@ public class MotorBike {
     @Column(name = "engineNumber", length = 255)
     private String engineNumber;
 
+    @ManyToOne
+    @JoinColumn(name = "account_id")
+    private Account account;
 
 }

@@ -41,7 +41,7 @@ public class Information {
     @Column(name = "street", length = 255)
     private String street;
 
-//    @ManyToOne
+    //    @ManyToOne
 //    @JoinColumn(name = "address_id", nullable = false)
 //    private Address address;
     @OneToOne

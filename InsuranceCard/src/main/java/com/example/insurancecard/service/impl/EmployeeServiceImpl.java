@@ -1,9 +1,9 @@
 package com.example.insurancecard.service.impl;
 
 import com.example.insurancecard.dto.EmployeeDto;
-import com.example.insurancecard.entity.Employee;
 import com.example.insurancecard.repository.EmployeeRepository;
 import com.example.insurancecard.service.EmployeeService;
+import com.example.insurancecard.entity.Employee;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

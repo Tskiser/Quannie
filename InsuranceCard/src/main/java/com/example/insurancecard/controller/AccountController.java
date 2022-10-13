@@ -1,7 +1,6 @@
 package com.example.insurancecard.controller;
 
 import com.example.insurancecard.dto.AccountDto;
-import com.example.insurancecard.dto.EmployeeDto;
 import com.example.insurancecard.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
