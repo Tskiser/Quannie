@@ -23,4 +23,12 @@ public class Account {
 
     @Column(name = "password")
     private String password;
+
+    @Column(name = "role", nullable = false)
+    private long roleId;
+    @Column(name = "roleName", nullable = false, length = 255)
+    private String roleName;
+
+    @OneToOne(mappedBy = "account", cascade = CascadeType.ALL)
+    private Information information;
 }

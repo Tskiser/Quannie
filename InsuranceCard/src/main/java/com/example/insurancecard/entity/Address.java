@@ -26,7 +26,7 @@ public class Address {
     private String district;
     @Column(name = "street", length = 255)
     private String street;
-    @OneToMany(mappedBy = "address", cascade = CascadeType.ALL)
-    private List<Information> information;
+//    @OneToMany(mappedBy = "address", cascade = CascadeType.ALL)
+//    private List<Information> information;
 
 }
