@@ -1,0 +1,46 @@
+.container {
+    padding: 0 200px;
+}
+
+.flex-container-profile {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.flex-profile {
+    width: 100%;
+}
+
+.left-profile {
+    padding-right: 20px;
+}
+
+input:not([type=radio]) {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    width: 60%;
+    margin: 8px auto;
+    display: block;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    margin: 0;
+}
