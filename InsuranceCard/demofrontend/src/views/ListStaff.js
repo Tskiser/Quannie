@@ -9,9 +9,18 @@ ListStaff.propTypes = {
 ListStaff.defaultProps ={
     data: [],
 }
+
 function ListStaff({data}) {
+
+    const [searchStr, setSearchStr] = useState('');
+    const [searchList, setSearchList] = useState(data);
+    const listData = data;
+    const handleSearch=()=>{       
+        setSearchList(listData.filter((staff) => staff.name.toLowerCase().includes(searchStr.toLowerCase())))
+    }
     return (
         <div>
+        <input value={searchStr} onChange={(e)=>setSearchStr(e.target.value)}/> <button onClick={handleSearch}>Search</button>
         <table class="content-table">
             <thead>
                 <tr>
@@ -34,7 +43,7 @@ function ListStaff({data}) {
                     <td>lien quan ha noi</td>
                 </tr>
                 {
-                    data.map((staff)=>(
+                    searchList.map((staff)=>(
                         <Staff staff={staff}/>
                     ))
                 }
