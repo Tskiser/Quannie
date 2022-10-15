@@ -1,7 +1,6 @@
 import axios from "axios"
 import React, { useEffect, useState, } from "react"
 import { useHistory } from "react-router-dom"
-import '../styles/login.scss'
 
 const Login = () => {
     let history = useHistory();

@@ -48,7 +48,7 @@ const CreateCustomer = () => {
                   value={accountCus.password}
                   placeholder="enter password"
                   onChange={(e) => {
-                    setAccountStaff({ ...accountCus, password: e.target.value });
+                    setAccountCus({ ...accountCus, password: e.target.value });
                   }}
                 />
               </h4>
@@ -73,7 +73,7 @@ const CreateCustomer = () => {
                       placeholder="enter folk"
                       value={profileCus.folk}
                       onChange={(e) => {
-                        setProfileStaff({ ...profileCus, folk: e.target.value });
+                        setProfileCus({ ...profileCus, folk: e.target.value });
                       }}
                     />
                   </h4>
@@ -154,7 +154,7 @@ const CreateCustomer = () => {
                   placeholder="enter city"
                   value={addressCus.city}
                   onChange={(e) => {
-                    setAddressStaff({ ...addressCus, city: e.target.value });
+                    setAddressCus({ ...addressCus, city: e.target.value });
                   }}
                 />
               </h4>

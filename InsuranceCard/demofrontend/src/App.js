@@ -47,7 +47,7 @@ function App() {
         </Route>
         {/* Create login form - Quan */}
         <Route path="/">
-          <Login />
+          <LoginPage />
         </Route>
 
       </Switch>
