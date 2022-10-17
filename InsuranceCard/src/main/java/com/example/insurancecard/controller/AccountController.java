@@ -5,10 +5,7 @@ import com.example.insurancecard.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -23,6 +20,12 @@ public class AccountController {
     @RequestMapping(value = "", method = RequestMethod.GET)
     public ResponseEntity<List<AccountDto>> getAll(){
         List<AccountDto> result = service.getAll();
+        return new ResponseEntity<>(result, HttpStatus.OK);
+    }
+
+    @PostMapping("/save")
+    public ResponseEntity<AccountDto> saveUser(@RequestBody AccountDto accountDto){
+        AccountDto result = service.saveAccount(accountDto);
         return new ResponseEntity<>(result, HttpStatus.OK);
     }
 }

@@ -1,8 +1,16 @@
 package com.example.insurancecard.dto;
 
 import com.example.insurancecard.entity.Account;
+import com.example.insurancecard.entity.Role;
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.format.annotation.DateTimeFormat;
+
+import javax.persistence.Column;
+import javax.persistence.FetchType;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import java.sql.Date;
 
 @Getter
 @Setter
@@ -10,8 +18,18 @@ public class AccountDto {
     private long id;
     private String username;
     private String password;
-    private long roleId;
-    private String roleName;
+    private String name;
+    private int gender;
+    private String folk;
+    private Date brithDate;
+    private String phone;
+
+    private String country;
+    private String city;
+    private String district;
+    private String street;
+
+    private RoleDto role;
 
     public AccountDto() {
     }
@@ -21,8 +39,18 @@ public class AccountDto {
             this.setId(account.getId());
             this.setUsername(account.getUsername());
             this.setPassword(account.getPassword());
-            this.setRoleId(account.getRoleId());
-            this.setRoleName(account.getRoleName());
+            this.setName(account.getName());
+            this.setGender(account.getGender());
+            this.setFolk(account.getFolk());
+            this.setBrithDate(account.getBrithDate());
+            this.setPhone(account.getPhone());
+            this.setCountry(account.getCountry());
+            this.setCity(account.getCity());
+            this.setDistrict(account.getDistrict());
+            this.setStreet(account.getStreet());
+            if(account.getRole()!=null){
+                role =new RoleDto(account.getRole());
+            }
         }
     }
 }
