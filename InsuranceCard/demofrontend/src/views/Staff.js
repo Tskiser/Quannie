@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+import { BsFillPencilFill } from "react-icons/bs";
+import { BsFillTrashFill } from "react-icons/bs";
 Staff.propTypes = {
   staff: PropTypes.object,
 };
@@ -14,6 +15,7 @@ function Staff({ staff }) {
       <td>{staff.email}</td>
       <td>{staff.phone}</td>
       <td>{staff.address}</td>
+      <td><BsFillPencilFill/><BsFillTrashFill/></td>
     </tr>
   );
 }
