@@ -21,8 +21,11 @@ function ListStaff({ data }) {
     }
     return (
         <React.Fragment>
-            <Nav/>
-            <input value={searchStr} onChange={(e) => setSearchStr(e.target.value)} /> <button onClick={handleSearch}>Search</button>
+            <Nav />
+            <div className='searchContainer_liststaff'>
+                <input className='inputStaff_liststaff' value={searchStr} onChange={(e) => setSearchStr(e.target.value)} />
+                <button className='searchButton_liststaff' onClick={handleSearch}>Search</button>
+            </div>
             <table class="content-table">
                 <thead>
                     <tr>
