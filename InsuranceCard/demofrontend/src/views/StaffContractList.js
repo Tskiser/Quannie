@@ -14,7 +14,7 @@ Listcontract.defaultProps = {
             code: 'A1234567',
             type: 'Bao Hiem Xe May',
             from: '11/10/2002',
-            through:'11/10/2003'
+            through: '11/10/2003'
         }
     ],
 }
@@ -35,9 +35,17 @@ function Listcontract({ data }) {
     return (
         <React.Fragment>
             <Nav />
-            <div className='searchContainer_listcontract'>
-                <input className='inputcontract_listcontract' value={searchStr} onChange={(e) => setSearchStr(e.target.value)} />
-                <button className='searchButton_listcontract' onClick={handleSearch}>Search</button>
+            <div className="container-search_listcontract">
+                <div className="main_search">
+                    <input
+                        className="input_listcontract"
+                        value={searchStr}
+                        onChange={(e) => setSearchStr(e.target.value)}
+                    />{' '}
+                    <button class="button-search_listcontract" onClick={handleSearch}>
+                        Search
+                    </button>
+                </div>
             </div>
             <table class="content-table">
                 <thead>

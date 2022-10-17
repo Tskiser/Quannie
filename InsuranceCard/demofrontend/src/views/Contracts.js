@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+import { BsFillPencilFill } from "react-icons/bs";
+import { BsFillTrashFill } from "react-icons/bs";
 contract.propTypes = {
   contract: PropTypes.object,
 };
@@ -13,6 +14,16 @@ function contract({ contract }) {
       <td>{contract.type}</td>
       <td>{contract.from}</td>
       <td>{contract.through}</td>
+      <td>
+        <div className="cancel-renew">
+          <p className="hover-pointer">
+            <BsFillPencilFill size={20}/>
+          </p>
+          <p className="hover-pointer">
+            <BsFillTrashFill size={20} />
+          </p>
+        </div>
+      </td>
     </tr>
   );
 }

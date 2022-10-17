@@ -15,7 +15,16 @@ function Staff({ staff }) {
       <td>{staff.email}</td>
       <td>{staff.phone}</td>
       <td>{staff.address}</td>
-      <td><BsFillPencilFill/><BsFillTrashFill/></td>
+      <td>
+        <div className="edit-delete_staff">
+          <p className="hover-pointer">
+            <BsFillPencilFill />
+          </p>
+          <p className="hover-pointer">
+            <BsFillTrashFill />
+          </p>
+        </div>
+      </td>
     </tr>
   );
 }
