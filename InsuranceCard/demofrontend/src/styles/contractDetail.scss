@@ -1,10 +1,10 @@
 .container-contract-detail {
     padding: 50px 400px;
-    background: linear-gradient(120deg, #2980b9, #8e44ad);
+    // background: linear-gradient(120deg, #2980b9, #8e44ad);
+    background-color: #2691d9;
 }
 
 .main {
-    border: 1px solid #000;
     padding: 50px;
     border-radius: 5px;
     background-color: #fff;
@@ -52,7 +52,8 @@ input:focus {
 
 .btn-contract-detail {
     display: flex;
-    margin-top: 30px;
+    margin-top: 70px;
+    justify-content: space-around;
 }
 
 .btn-contract-detail button {
@@ -62,9 +63,9 @@ input:focus {
 .btn-contract-detail button {
     height: 50px;
     border: 2px solid #fff;
-    background: #2691d9;
+    background: #1373b4;
     border-radius: 25px;
-    font-size: 18px;
+    font-size: 20px;
     color: #e9f4fb;
     font-weight: 700;
     cursor: pointer;
@@ -72,7 +73,8 @@ input:focus {
 }
 
 .btn-contract-detail button:hover {
-    background-color: #2336b1;
+    background-color: #2691d9;
+    opacity: 0.8;
     transition: .5s;
 }
 

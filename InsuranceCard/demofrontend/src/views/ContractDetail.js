@@ -47,10 +47,10 @@ function ContractDetail(props) {
               <input type="date"  value={detailContract.ContractDate}  onChange={(e)=>setDetailContract({ ...detailContract,ContractDate: e.target.value} )}/>
             </div>
           </div>
-        </div>
         <div className="btn-contract-detail">
         <button>Create</button>
         <button>Cancel</button>
+        </div>
         </div>
       </div>
     </React.Fragment>
