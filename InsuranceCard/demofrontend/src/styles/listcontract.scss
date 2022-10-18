@@ -9,7 +9,7 @@
 }
 
 .content-table thead tr {
-    background-color: #04aa6d;
+    background-color:  #2691d9;
     color: #fff;
     text-align: left;
     font-weight: bold;
@@ -29,16 +29,16 @@
 }
 
 .content-table tbody tr:last-of-type {
-    border-bottom: 2px solid #04aa6d;
+    border-bottom: 2px solid #1f7ebd;
 }
 
 .content-table tbody tr.active-row {
     font-weight: bold;
-    color: #04aa6d;
+    color: #1f7ebd;
 }
 
 .container-search_listcontract {
-    background-color: #04aa6d;
+     background-color:  #2691d9;
     width: 100%;
     padding: 10px;
 }
@@ -62,19 +62,20 @@
 .button-search_listcontract {
     margin: 2px;
     width: 100px;
-    background-color: #04aa6d;
+     background-color:  #2691d9;
     border-radius: 5px;
+    border: none;
+    font-size: 16px;
 }
 
-input:focus,
-textarea:focus,
-select:focus {
-    outline: none;
+.button-search_listcontract:hover{
+    background-color: #1f7ebd;
+    color: #fff;
 }
 
-.cancel-renew {
+.cancel-renew{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .hover-pointer {

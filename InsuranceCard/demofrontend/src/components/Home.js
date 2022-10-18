@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import _ from "lodash";
 import AddTodo from "../views/AddTodo";
 import DisplayTodo from "../views/DisplayTodo";
-import Login from "./Login";
+import LoginPage from "./LoginPage";
 import Nav from "./Nav";
 const Home = () => {
     const [todo, setTodo] = useState("")

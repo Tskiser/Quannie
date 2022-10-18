@@ -1,6 +1,6 @@
 import React from 'react'
 import * as FAicons from "react-icons/fa";
-import '../styles/Nav.scss'
+import '../styles/topBar.scss'
 import '../styles/Sidebar.scss'
 const Nav = () => {
 
@@ -10,22 +10,19 @@ const Nav = () => {
 
     return (
         <React.Fragment>
-            <div class="topnav">
-                
-                <button className='sidebar-toggler' onClick={handleSidebar}><FAicons.FaBars/></button>
-                <button className='nav-link'><a href="#home">Home</a></button>
-                <button className='nav-link'><a href="#news">News</a></button>
-                <button className='nav-link'><a href="#contact">Contact</a></button>
-                <button className='nav-link'><a href="#about">About</a></button>
-               
+            <div className='topBar'>
+                <div className="topnav">
+                    <button className='sidebar-toggler' onClick={handleSidebar}><FAicons.FaBars /></button>
+                    <button className='nav-link'>Home</button>
+                    <button className='nav-link'>News</button>
+                    <button className='nav-link'>Contact</button>
+                    <button className='nav-link'>About</button>
+                </div>
+
+                <div className='profile'>
+                    
+                </div>
             </div>
-            <ul className='sideNav'>
-                <li className='navItem'><a href='#'>Item 1</a></li>
-                <li className='navItem'><a href='#'>Item 1</a></li>
-                <li className='navItem'><a href='#'>Item 1</a></li>
-                <li className='navItem'><a href='#'>Item 1</a></li>
-                <li className='navItem'><a href='#'>Item 1</a></li>
-            </ul>
         </React.Fragment>
     )
 }

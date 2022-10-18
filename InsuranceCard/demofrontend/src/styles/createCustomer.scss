@@ -21,15 +21,15 @@ input:not([type=radio]) {
     padding: 12px 20px;
     margin: 4px 0;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 0px;
     box-sizing: border-box;
 }
 
-button:hover {
+.container button:hover {
     opacity: 0.8;
 }
 
-button {
+.container button {
     background-color: #04AA6D;
     color: white;
     padding: 14px 20px;

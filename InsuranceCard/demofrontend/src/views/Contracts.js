@@ -17,10 +17,10 @@ function contract({ contract }) {
       <td>
         <div className="cancel-renew">
           <p className="hover-pointer">
-            <BsFillPencilFill size={20}/>
+            <BsFillPencilFill size={16}/>
           </p>
           <p className="hover-pointer">
-            <BsFillTrashFill size={20} />
+            <BsFillTrashFill size={16} />
           </p>
         </div>
       </td>

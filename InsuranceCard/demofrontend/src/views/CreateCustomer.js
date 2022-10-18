@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import '../styles/createCustomer.scss';
 const GMale = 'male';
 const GFemale = 'female';
@@ -26,7 +26,7 @@ const CreateCustomer = () => {
         setAccountCus({ ...accountCus, username: user });
       };
       return (
-        <div>
+        <React.fragment>
           <div className="container">
             <h1>Create Customer</h1>
             <div className="Account">
@@ -182,7 +182,7 @@ const CreateCustomer = () => {
             <button>Create</button>
             <button>Cancel</button>
           </div>
-        </div>
+        </React.fragment>
       );
 }
 export default CreateCustomer

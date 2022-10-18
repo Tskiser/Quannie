@@ -24,11 +24,11 @@ input:not([type=radio]) {
     box-sizing: border-box;
 }
 
-button:hover {
+.container button:hover {
     opacity: 0.8;
 }
 
-button {
+.container button {
     background-color: #04AA6D;
     color: white;
     padding: 14px 20px;

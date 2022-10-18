@@ -1,0 +1,35 @@
+.topBar{
+    background-color:  #2691d9;
+}
+
+.topnav button:hover {
+    opacity: 0.8;
+}
+
+.topnav button {
+    background-color:  #2691d9;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    width: 60%;
+    margin: 8px auto;
+    display: block;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px;
+}
+
+
+.topnav {
+    width: 50%;
+    display: flex;
+    background-color:  #2691d9;
+    // overflow: hidden;
+}
+
+
+.topnav button:hover {
+    background-color: #f2f2f2;
+    color: black;
+}

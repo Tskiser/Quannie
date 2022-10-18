@@ -9,7 +9,7 @@
 }
 
 .content-table thead tr {
-    background-color: #04aa6d;
+    background-color:  #2691d9;
     color: #fff;
     text-align: left;
     font-weight: bold;
@@ -29,16 +29,16 @@
 }
 
 .content-table tbody tr:last-of-type {
-    border-bottom: 2px solid #04aa6d;
+    border-bottom: 2px solid #1f7ebd;
 }
 
 .content-table tbody tr.active-row {
     font-weight: bold;
-    color: #04aa6d;
+    color: #1f7ebd;
 }
 
 .container-search_liststaff {
-    background-color: #04aa6d;
+     background-color:  #2691d9;
     width: 100%;
     padding: 10px;
 }
@@ -62,8 +62,15 @@
 .button-search_liststaff {
     margin: 2px;
     width: 100px;
-    background-color: #04aa6d;
+     background-color:  #2691d9;
     border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+
+.button-search_liststaff:hover{
+    background-color: #1f7ebd;
+    color: #fff;
 }
 
 input:focus,
