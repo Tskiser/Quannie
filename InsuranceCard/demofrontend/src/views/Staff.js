@@ -6,7 +6,7 @@ Staff.propTypes = {
   staff: PropTypes.object,
 };
 
-function Staff({ staff }) {
+function Staff({ staff, setIsShow }) {
   return (
     <tr>
       <td>{staff.id}</td>
@@ -18,7 +18,7 @@ function Staff({ staff }) {
       <td>
         <div className="edit-delete_staff">
           <p className="hover-pointer">
-            <BsFillPencilFill />
+            <BsFillPencilFill onClick={()=>setIsShow(true)}/>
           </p>
           <p className="hover-pointer">
             <BsFillTrashFill />

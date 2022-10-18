@@ -37,7 +37,7 @@
     color: #1f7ebd;
 }
 
-.container-search_liststaff {
+.container-search_listmotorbike {
     background-color: #2691d9;
     width: 100%;
     padding: 10px;
@@ -53,13 +53,13 @@
     border-radius: 5px;
 }
 
-.input_liststaff {
+.input_listmotorbike {
     width: 100% !important;
     margin: 2px !important;
     border: none !important;
 }
 
-.button-search_liststaff {
+.button-search_listmotorbike {
     margin: 2px;
     width: 100px;
     background-color: #2691d9;
@@ -68,7 +68,7 @@
     font-size: 16px;
 }
 
-.button-search_liststaff:hover {
+.button-search_listmotorbike:hover {
     background-color: #1f7ebd;
     color: #fff;
 }
@@ -79,7 +79,7 @@ select:focus {
     outline: none;
 }
 
-.edit-delete_staff {
+.edit-delete_motorbike {
     display: flex;
     justify-content: space-evenly;
 }
@@ -88,37 +88,7 @@ select:focus {
     cursor: pointer;
 }
 
-.modal-edit {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.4);
-    align-items: center;
-    justify-content: center;
-}
-
-.container_modal {
-    background: #fff;
-    width: 900px;
-    max-width: calc(100% - 32px);
-    min-height: 200px;
-    position: relative;
-    animation: modalFadeIn ease 0.5s;
-}
-
-@keyframes modalFadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-140px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
-
-.modal-edit.open {
-    display: flex;
+.img-motorbike {
+    max-width: 200px;
+    max-height: 200px;
 }
