@@ -73,9 +73,9 @@ function ListStaff({ data }) {
             ))}
           </tbody>
         </table>
-        <div className="modal-edit">
+        {/* <div className="modal-edit">
           <div className="container_modal"></div>
-        </div>
+        </div> */}
       </div>
     </React.Fragment>
   );
