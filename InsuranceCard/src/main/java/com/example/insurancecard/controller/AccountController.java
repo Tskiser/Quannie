@@ -12,7 +12,6 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/account")
 @CrossOrigin(origins = "*", allowedHeaders = "*")
-//@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class AccountController {
     @Autowired
     private AccountService service;
