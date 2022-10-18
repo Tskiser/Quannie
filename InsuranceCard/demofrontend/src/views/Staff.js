@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+import { BsFillPencilFill } from "react-icons/bs";
+import { BsFillTrashFill } from "react-icons/bs";
 Staff.propTypes = {
   staff: PropTypes.object,
 };
 
-function Staff({ staff }) {
+function Staff({ staff, setIsShow }) {
   return (
     <tr>
       <td>{staff.id}</td>
@@ -14,6 +15,16 @@ function Staff({ staff }) {
       <td>{staff.email}</td>
       <td>{staff.phone}</td>
       <td>{staff.address}</td>
+      <td>
+        <div className="edit-delete_staff">
+          <p className="hover-pointer">
+            <BsFillPencilFill onClick={()=>setIsShow(true)}/>
+          </p>
+          <p className="hover-pointer">
+            <BsFillTrashFill />
+          </p>
+        </div>
+      </td>
     </tr>
   );
 }

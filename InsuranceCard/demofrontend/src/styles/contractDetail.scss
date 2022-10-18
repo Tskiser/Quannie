@@ -1,0 +1,88 @@
+.container-contract-detail {
+    padding: 50px 400px;
+    // background: linear-gradient(120deg, #2980b9, #8e44ad);
+    background-color: #2691d9;
+}
+
+.main {
+    padding: 50px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.body-container {
+    display: flex;
+    justify-content: space-around
+}
+
+.left-body {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.right-body {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.container-contract-detail input:not([type=radio]) {
+    padding: 12px 20px;
+    margin: 4px 0;
+    display: inline-block;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+.body-container input {
+    font-size: 15px;
+    border: 0;
+    outline: 0;
+}
+
+input:focus {
+    outline: none!important;
+}
+
+.btn-contract-detail {
+    display: flex;
+    margin-top: 70px;
+    justify-content: space-around;
+}
+
+.btn-contract-detail button {
+    width: 30%;
+}
+
+.btn-contract-detail button {
+    height: 50px;
+    border: 2px solid #fff;
+    background: #1373b4;
+    border-radius: 25px;
+    font-size: 20px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn-contract-detail button:hover {
+    background-color: #2691d9;
+    opacity: 0.8;
+    transition: .5s;
+}
+
+.title-c-detail {
+    margin-top: 0;
+    text-align: center;
+    font-size: xxx-large;
+    position: relative;
+    margin-bottom: 70px;
+    // max-width: 500px;
+}

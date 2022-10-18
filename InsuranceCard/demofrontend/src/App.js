@@ -1,17 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
 import Home from './components/Home';
-import Login from './components/Login';
 import LoginPage from './components/LoginPage';
 import CreateStaff from './views/CreateStaff';
 import CreateCustomer from './views/CreateCustomer';
+import ListStaff from './views/ListStaff';
+import Listcontract from './views/StaffContractList';
 import {
   BrowserRouter,
   Switch,
   Route,
   Link
 } from "react-router-dom";
-import ListStaff from './views/ListStaff';
+import ContractDetail from './views/ContractDetail';
+import ListMotorbike from './views/ListMotorbike';
+
 
 function App() {
   return (
@@ -33,12 +35,25 @@ function App() {
           <LoginPage />
         </Route>
         {/* Create login form - Phong */}
+        {/* Contract List - Phong */}
+        <Route path="/contract-list">
+          <Listcontract />
+        </Route>
+        {/* Contract List - Phong */}
+
+
         {/* Create staff account form - Nam */}
         <Route path="/create-staff">
           <CreateStaff />
         </Route>
         <Route path="/list-staff">
           <ListStaff />
+        </Route>
+        <Route path="/contract-detail">
+          <ContractDetail />
+        </Route>
+        <Route path="/list-motorbike">
+          <ListMotorbike />
         </Route>
         {/* Create login form - Nam */}
         {/* Create staff account form - Quan */}

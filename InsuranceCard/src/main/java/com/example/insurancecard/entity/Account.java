@@ -26,11 +26,6 @@ public class Account {
 
     @Column(name = "password")
     private String password;
-
-//    @Column(name = "role", nullable = false)
-//    private long roleId;
-//    @Column(name = "roleName", nullable = false, length = 255)
-//    private String roleName;
     @Column(name = "fullName", length = 255)
     private String name;
 //    @Column(name = "gender")
@@ -42,9 +37,12 @@ public class Account {
     private Date brithDate;
     @Column(name = "phoneNumber", length = 10)
     private String phone;
+<<<<<<< HEAD
     @Column(name = "email")
     private String email;
 
+=======
+>>>>>>> cd7dc86fe1845850817c0cf3ac3cafca6a828613
     @Column(name = "country", length = 255)
     private String country;
     @Column(name = "city", length = 255)
@@ -53,13 +51,9 @@ public class Account {
     private String district;
     @Column(name = "street", length = 255)
     private String street;
-
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name="role_id")
     private Role role;
-
-//    @OneToOne(mappedBy = "account", cascade = CascadeType.ALL)
-//    private Information information;
     @OneToMany(mappedBy = "account", cascade = CascadeType.ALL)
     private List<MotorBike> motorBike;
 

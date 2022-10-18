@@ -8,4 +8,9 @@ public interface AccountService {
     List<AccountDto> getAll();
 
     AccountDto saveAccount(AccountDto accountDto);
+
+    List<AccountDto> getListStaff();
+    List<AccountDto> getListCustomer();
+
+
 }
