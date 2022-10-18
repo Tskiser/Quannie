@@ -1,29 +1,32 @@
 import { useState } from 'react';
+import { useEffect } from 'react';
+import axios from 'axios';
 import '../styles/createStaff.scss';
-const GMale = 'male';
-const GFemale = 'female';
+const GMale = true;
+const GFemale = false;
 const CreateStaff = () => {
   const [accountStaff, setAccountStaff] = useState({
     username: '',
     password: '',
-  });
-  const [profileStaff, setProfileStaff] = useState({
     name: '',
     gender: '',
     birthday: '',
     folk: '',
     phone: '',
     email: '',
-  });
-  const [addressStaff, setAddressStaff] = useState({
     country: '',
     city: '',
     district: '',
     street: '',
   });
 
-  const handleGetUserName = (user) => {
-    setAccountStaff({ ...accountStaff, username: user });
+
+  const HandleOnclickCreate = () => {
+    // useEffect(() => {
+    //   axios
+    //     .post('api/account/save', accountStaff)
+    // }, []);
+    console.log(accountStaff)
   };
   return (
     <div>
@@ -61,9 +64,9 @@ const CreateStaff = () => {
                 Name:{' '}
                 <input
                   placeholder="enter name"
-                  value={profileStaff.name}
+                  value={accountStaff.name}
                   onChange={(e) => {
-                    setProfileStaff({ ...profileStaff, name: e.target.value });
+                    setAccountStaff({ ...accountStaff, name: e.target.value });
                   }}
                 />
               </h4>
@@ -71,9 +74,9 @@ const CreateStaff = () => {
                 Folk:{' '}
                 <input
                   placeholder="enter folk"
-                  value={profileStaff.folk}
+                  value={accountStaff.folk}
                   onChange={(e) => {
-                    setProfileStaff({ ...profileStaff, folk: e.target.value });
+                    setAccountStaff({ ...accountStaff, folk: e.target.value });
                   }}
                 />
               </h4>
@@ -84,7 +87,7 @@ const CreateStaff = () => {
                 type="radio"
                 name="gender"
                 onChange={(e) => {
-                  setProfileStaff({ ...profileStaff, gender: GMale });
+                  setAccountStaff({ ...accountStaff, gender: GMale });
                 }}
               />{' '}
               MALE
@@ -92,7 +95,7 @@ const CreateStaff = () => {
                 type="radio"
                 name="gender"
                 onChange={(e) => {
-                  setProfileStaff({ ...profileStaff, gender: GFemale });
+                  setAccountStaff({ ...accountStaff, gender: GFemale });
                 }}
               />{' '}
               FEMALE
@@ -102,10 +105,10 @@ const CreateStaff = () => {
                 Birthday:{' '}
                 <input
                   type="date"
-                  value={profileStaff.birthday}
+                  value={accountStaff.birthday}
                   onChange={(e) => {
-                    setProfileStaff({
-                      ...profileStaff,
+                    setAccountStaff({
+                      ...accountStaff,
                       birthday: e.target.value,
                     });
                   }}
@@ -114,11 +117,11 @@ const CreateStaff = () => {
               <h4>
                 Phone:{' '}
                 <input
-                   type="number"
+                  type="number"
                   placeholder="enter phone number"
-                  value={profileStaff.phone}
+                  value={accountStaff.phone}
                   onChange={(e) => {
-                    setProfileStaff({ ...profileStaff, phone: parseInt(e.target.value) });
+                    setAccountStaff({ ...accountStaff, phone: parseInt(e.target.value) });
                   }}
                 />
               </h4>
@@ -127,9 +130,9 @@ const CreateStaff = () => {
                 <input
                   type="email"
                   placeholder="enter email"
-                  value={profileStaff.email}
+                  value={accountStaff.email}
                   onChange={(e) => {
-                    setProfileStaff({ ...profileStaff, email: e.target.value });
+                    setAccountStaff({ ...accountStaff, email: e.target.value });
                   }}
                 />
               </h4>
@@ -142,9 +145,9 @@ const CreateStaff = () => {
             Country:{' '}
             <input
               placeholder="enter country"
-              value={addressStaff.country}
+              value={accountStaff.country}
               onChange={(e) => {
-                setAddressStaff({ ...addressStaff, country: e.target.value });
+                setAccountStaff({ ...accountStaff, country: e.target.value });
               }}
             />
           </h4>
@@ -152,9 +155,9 @@ const CreateStaff = () => {
             City:{' '}
             <input
               placeholder="enter city"
-              value={addressStaff.city}
+              value={accountStaff.city}
               onChange={(e) => {
-                setAddressStaff({ ...addressStaff, city: e.target.value });
+                setAccountStaff({ ...accountStaff, city: e.target.value });
               }}
             />
           </h4>
@@ -162,9 +165,9 @@ const CreateStaff = () => {
             District:{' '}
             <input
               placeholder="enter district "
-              value={addressStaff.district}
+              value={accountStaff.district}
               onChange={(e) => {
-                setAddressStaff({ ...addressStaff, district: e.target.value });
+                setAccountStaff({ ...accountStaff, district: e.target.value });
               }}
             />
           </h4>
@@ -172,14 +175,14 @@ const CreateStaff = () => {
             Street:{' '}
             <input
               placeholder="enter street"
-              value={addressStaff.street}
+              value={accountStaff.street}
               onChange={(e) => {
-                setAddressStaff({ ...addressStaff, street: e.target.value });
+                setAccountStaff({ ...accountStaff, street: e.target.value });
               }}
             />
           </h4>
         </div>
-        <button>Create</button>
+        <button onClick={HandleOnclickCreate}>Create</button>
         <button>Cancel</button>
       </div>
     </div>

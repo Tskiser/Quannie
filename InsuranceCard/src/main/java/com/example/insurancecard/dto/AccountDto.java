@@ -19,10 +19,11 @@ public class AccountDto {
     private String username;
     private String password;
     private String name;
-    private int gender;
+//    private boolean gender;
     private String folk;
     private Date brithDate;
     private String phone;
+    private String email;
 
     private String country;
     private String city;
@@ -40,7 +41,7 @@ public class AccountDto {
             this.setUsername(account.getUsername());
             this.setPassword(account.getPassword());
             this.setName(account.getName());
-            this.setGender(account.getGender());
+//            this.setGender(account.isGender());
             this.setFolk(account.getFolk());
             this.setBrithDate(account.getBrithDate());
             this.setPhone(account.getPhone());
@@ -48,6 +49,7 @@ public class AccountDto {
             this.setCity(account.getCity());
             this.setDistrict(account.getDistrict());
             this.setStreet(account.getStreet());
+            this.setEmail(account.getEmail());
             if(account.getRole()!=null){
                 role =new RoleDto(account.getRole());
             }

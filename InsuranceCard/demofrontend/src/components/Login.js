@@ -7,6 +7,7 @@ const Login = () => {
     const [listAccount, setListAccount] = useState();
     useEffect(async () => {
         let data = await axios.get("api/account");
+
         setListAccount(data.data)
     }, [])
     // console.log("show data: ", listAccount)

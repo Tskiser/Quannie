@@ -38,10 +38,12 @@ public class AccountServiceImpl implements AccountService {
             user.setName(accountDto.getName());
             user.setUsername(accountDto.getUsername());
             user.setPassword(accountDto.getPassword());
-            user.setGender(accountDto.getGender());
+//            user.setGender(accountDto.isGender());
             user.setFolk(accountDto.getFolk());
             user.setBrithDate(accountDto.getBrithDate());
             user.setPhone(accountDto.getPhone());
+            user.setEmail(accountDto.getEmail());
+
             user.setCountry(accountDto.getCountry());
             user.setCity(accountDto.getCity());
             user.setDistrict(accountDto.getDistrict());

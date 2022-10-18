@@ -33,8 +33,8 @@ public class Account {
 //    private String roleName;
     @Column(name = "fullName", length = 255)
     private String name;
-    @Column(name = "gender")
-    private int gender;
+//    @Column(name = "gender")
+//    private boolean gender;
     @Column(name = "nationality", length = 255)
     private String folk;
     @Column(name = "birthDate")
@@ -42,6 +42,8 @@ public class Account {
     private Date brithDate;
     @Column(name = "phoneNumber", length = 10)
     private String phone;
+    @Column(name = "email")
+    private String email;
 
     @Column(name = "country", length = 255)
     private String country;
