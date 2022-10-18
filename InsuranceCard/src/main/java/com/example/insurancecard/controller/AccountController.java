@@ -27,4 +27,15 @@ public class AccountController {
         AccountDto result = service.saveAccount(accountDto);
         return new ResponseEntity<>(result, HttpStatus.OK);
     }
+
+    @GetMapping(value = "/staff")
+    public ResponseEntity<List<AccountDto>> getListStaff(){
+        List<AccountDto> list = service.getListStaff();
+        return new ResponseEntity<>(list, HttpStatus.OK);
+    }
+    @GetMapping(value = "/customer")
+    public ResponseEntity<List<AccountDto>> getListCustomer(){
+        List<AccountDto> list = service.getListCustomer();
+        return new ResponseEntity<>(list, HttpStatus.OK);
+    }
 }

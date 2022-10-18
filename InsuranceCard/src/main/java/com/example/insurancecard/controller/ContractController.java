@@ -51,4 +51,10 @@ public class ContractController {
         return new ResponseEntity<>(list, HttpStatus.OK);
 
     }
+
+    @GetMapping(value = "/listbyaccountid/{id}")
+    public ResponseEntity<List<ContractDto>> getListContractByAccountID(@PathVariable Long id){
+        List<ContractDto> list = contractService.getContractByAccountID(id);
+        return new ResponseEntity<>(list, HttpStatus.OK);
+    }
 }

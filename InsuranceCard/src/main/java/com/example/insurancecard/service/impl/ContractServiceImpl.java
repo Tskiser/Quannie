@@ -113,7 +113,13 @@ public class ContractServiceImpl implements ContractService {
 
     @Override
     public List<ContractDto> getContractByAccountID(Long id) {
-         return null;
+         List<ContractDto> list = new ArrayList<>();
+         List<Contract> listContract = repository.getContractByAccountId(id);
+        for (Contract item: listContract
+             ) {
+            list.add(new ContractDto(item));
+        }
+        return list;
     }
 
     @Override
