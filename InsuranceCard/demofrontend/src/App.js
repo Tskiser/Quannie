@@ -11,6 +11,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import ContractDetail from './views/ContractDetail';
 
 
 function App() {
@@ -46,6 +47,9 @@ function App() {
         </Route>
         <Route path="/list-staff">
           <ListStaff />
+        </Route>
+        <Route path="/contract-detail">
+          <ContractDetail />
         </Route>
         {/* Create login form - Nam */}
         {/* Create staff account form - Quan */}
