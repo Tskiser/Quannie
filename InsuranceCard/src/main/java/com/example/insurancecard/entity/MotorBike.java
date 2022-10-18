@@ -17,6 +17,8 @@ import java.sql.Date;
 @AllArgsConstructor
 public class MotorBike {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
     @Column(name = "license", length = 9, unique = true)
     private String license;
     @Column(name = "model", length = 255)
@@ -33,7 +35,7 @@ public class MotorBike {
     @Column(name = "engineNumber", length = 255)
     private String engineNumber;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "account_id")
     private Account account;
 
