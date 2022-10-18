@@ -61,4 +61,26 @@ public class AccountServiceImpl implements AccountService {
         }
         return null;
     }
+
+    @Override
+    public List<AccountDto> getListStaff() {
+        List<AccountDto> listStaff = new ArrayList<>();
+        List<Account> list = repository.getListStaff();
+        for (Account item: list
+             ) {
+            listStaff.add(new AccountDto(item));
+        }
+        return listStaff;
+    }
+
+    @Override
+    public List<AccountDto> getListCustomer() {
+        List<AccountDto> listCustomer = new ArrayList<>();
+        List<Account> list = repository.getListCustomer();
+        for (Account item: list
+             ) {
+            listCustomer.add(new AccountDto(item));
+        }
+        return listCustomer;
+    }
 }

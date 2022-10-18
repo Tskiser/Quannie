@@ -10,5 +10,4 @@ public interface MotorBikeService {
     MotorBikeDto getMotorbikeById(Long id);
     Boolean removeMotorbike(Long id);
 
-
 }
