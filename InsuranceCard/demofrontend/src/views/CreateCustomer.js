@@ -3,10 +3,7 @@ import '../styles/createCustomer.scss';
 const GMale = 'male';
 const GFemale = 'female';
 const CreateCus = () => {
-  const [accountCus, setAccountCus] = useState({
-    username: '',
-    password: '',
-  });
+
   const [profileCus, setProfileCus] = useState({
     name: '',
     gender: '',
@@ -22,17 +19,11 @@ const CreateCus = () => {
     street: '',
   });
 
-  const handleGetUserName = (user) => {
-    setAccountCus({ ...accountCus, username: user });
-  };
   return (
     <div>
       <div className="container-create-Cus">
         <div className="main-create-Cus">
           <h1>Create Customer</h1>
-          <div className="Account">
-
-          </div>
           <div className="Profile">
             <h2>Profile</h2>
             <div className="flex-container-profile">
