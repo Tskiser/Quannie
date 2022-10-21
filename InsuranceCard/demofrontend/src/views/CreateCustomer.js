@@ -1,15 +1,5 @@
 import { useState } from 'react';
 import '../styles/createCustomer.scss';
-import {
-  BsFillPersonFill,
-  BsFillCalendarEventFill,
-  BsFillTelephoneFill,
-  BsEnvelopeFill,
-  BsFillPeopleFill,
-  BsGenderAmbiguous,
-  BsGeoAltFill,
-} from "react-icons/bs";
-
 const GMale = 'male';
 const GFemale = 'female';
 const CreateCus = () => {
@@ -39,7 +29,7 @@ const CreateCus = () => {
             <div className="flex-container-profile">
               <div className="left-profile flex-profile">
                 <h4>
-                <BsFillPersonFill className="icon" /> Name:{' '}
+                  Name:{' '}
                   <input
                     placeholder="enter name"
                     value={profileCus.name}
@@ -52,7 +42,7 @@ const CreateCus = () => {
                   />
                 </h4>
                 <h4>
-                <BsFillPeopleFill className="input" /> Folk:{" "}
+                  Folk:{' '}
                   <input
                     placeholder="enter folk"
                     value={profileCus.folk}
@@ -65,7 +55,7 @@ const CreateCus = () => {
                   />
                 </h4>
                 <h4>
-                <BsGenderAmbiguous className="icon" /> Gender: <br />
+                  Gender: <br />
                 </h4>
                 <input
                   type="radio"
@@ -86,7 +76,7 @@ const CreateCus = () => {
               </div>
               <div className="right-profile flex-profile">
                 <h4>
-                <BsFillCalendarEventFill className="icon" /> Birthday:{' '}
+                  Birthday:{' '}
                   <input
                     type="date"
                     value={profileCus.birthday}
@@ -99,7 +89,7 @@ const CreateCus = () => {
                   />
                 </h4>
                 <h4>
-                <BsFillTelephoneFill className="icon" /> Phone:{' '}
+                  Phone:{' '}
                   <input
                     type="number"
                     placeholder="enter phone number"
@@ -113,7 +103,7 @@ const CreateCus = () => {
                   />
                 </h4>
                 <h4>
-                <BsEnvelopeFill className="icon" /> Email:{' '}
+                  Email:{' '}
                   <input
                     type="email"
                     placeholder="enter email"
@@ -132,7 +122,7 @@ const CreateCus = () => {
           <div className="Address">
             <h2>Addresss</h2>
             <h4>
-            <BsGeoAltFill className="icon" /> Country:{' '}
+              Country:{' '}
               <input
                 placeholder="enter country"
                 value={addressCus.country}
@@ -142,7 +132,7 @@ const CreateCus = () => {
               />
             </h4>
             <h4>
-            <BsGeoAltFill className="icon" /> City:{' '}
+              City:{' '}
               <input
                 placeholder="enter city"
                 value={addressCus.city}
@@ -152,7 +142,7 @@ const CreateCus = () => {
               />
             </h4>
             <h4>
-            <BsGeoAltFill className="icon" /> District:{' '}
+              District:{' '}
               <input
                 placeholder="enter district "
                 value={addressCus.district}
@@ -165,7 +155,7 @@ const CreateCus = () => {
               />
             </h4>
             <h4>
-            <BsGeoAltFill className="icon" /> Street:{' '}
+              Street:{' '}
               <input
                 placeholder="enter street"
                 value={addressCus.street}
