@@ -1,7 +1,8 @@
 .container-create-Cus {
+    padding: 0 200px;
     font-size: 17px;
     background-color: #2691d9;
-    padding: 10%;
+    padding: 30px 300px;
 }
 
 .container-create-Cus h1 {
@@ -17,7 +18,7 @@
 .main-create-Cus {
     background-color: #fff;
     padding: 80px;
-    border-radius: 20px;
+    border-radius: 5px;
 }
 
 .flex-profile {
@@ -34,8 +35,6 @@
     display: inline-block;
     border-bottom: 1px solid #ccc;
     box-sizing: border-box;
-    display: flex;
-    width: 100%;  
 }
 
 .container button:hover {
