@@ -13,6 +13,7 @@ import {
 } from "react-router-dom";
 import ContractDetail from './views/ContractDetail';
 import ListMotorbike from './views/ListMotorbike';
+import CreateContract from './views/CreateContract';
 
 
 function App() {
@@ -59,6 +60,9 @@ function App() {
         {/* Create staff account form - Quan */}
         <Route path="/create-customer">
           <CreateCustomer />
+        </Route>
+        <Route path="/create-contract">
+          <CreateContract />
         </Route>
         {/* Create login form - Quan */}
         <Route path="/">
