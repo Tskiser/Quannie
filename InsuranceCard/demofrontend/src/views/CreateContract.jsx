@@ -70,7 +70,7 @@ const CreateContract = () => {
                   />
                 </h4>
                 <h4>
-                  <BsCashStack lassName="icon" /> Price Contract {' '}
+                  <BsCashStack className="icon" /> Price Contract {' '}
                   <input
                     type="text"
                     placeholder="Enter price contract"
