@@ -7,8 +7,6 @@ import {
   BsCalendar2DateFill,
 } from 'react-icons/bs'
 
-const GMale = 'male'
-const GFemale = 'female'
 const CreateContract = () => {
   const [contract, setContract] = useState({
     code: '',
