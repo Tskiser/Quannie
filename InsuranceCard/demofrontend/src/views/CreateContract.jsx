@@ -6,6 +6,7 @@ import {
   BsCashStack,
   BsCalendar2DateFill,
 } from 'react-icons/bs'
+import cryptoRandomString from 'crypto-random-string';
 
 const CreateContract = () => {
   const [contract, setContract] = useState({
@@ -29,16 +30,11 @@ const CreateContract = () => {
             <div className="flex-container-profile">
               <div className="left-profile flex-profile">
                 <h4>
-                  <BsFillPersonFill className="icon" /> Name{' '}
+                  <BsFillPersonFill className="icon" /> Code{' '}
                   <input
                     placeholder="Enter Name"
-                    value={contract.name}
-                    onChange={(e) => {
-                      setContract({
-                        ...contract,
-                        name: e.target.value,
-                      })
-                    }}
+                    value={cryptoRandomString({length: 10, type: 'numeric'})}
+                    disabled
                   />
                 </h4>
                 <h4>
