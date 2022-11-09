@@ -1,23 +1,25 @@
 .container-create-staff {
     font-size: 17px;
     background-color: #2691d9;
-    padding: 10%;
+    padding: 20%;
 }
 
 .container-create-staff h1 {
     margin: 0;
+    
 }
 
 .flex-container-profile {
-    display: flex;
-    width: 100%;
+    display: absolute;
+    width: 30%;
     justify-content: space-between;
+    
 }
 
 .main-create-staff {
     background-color: #fff;
     padding: 80px;
-    border-radius: 20px;
+    border-radius: 1px;
 }
 
 .flex-profile {

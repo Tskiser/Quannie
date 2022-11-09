@@ -5,6 +5,8 @@ import {
   BsFillCalendarEventFill,
   BsCashStack,
   BsCalendar2DateFill,
+  BsFillFileEarmarkMedicalFill,
+
 } from 'react-icons/bs'
 import cryptoRandomString from 'crypto-random-string';
 
@@ -19,6 +21,9 @@ const CreateContract = () => {
     FPFDate: '',
     SPFDate: '',
     contractDate: '',
+    licenseplate: '',
+    enginenumber: '',
+    chassisnumber: '',
   })
 
   return (
@@ -33,7 +38,7 @@ const CreateContract = () => {
                   <BsFillPersonFill className="icon" /> Code{' '}
                   <input
                     placeholder="Enter Name"
-                    value={cryptoRandomString({length: 10, type: 'numeric'})}
+                    value={cryptoRandomString({ length: 8, type: 'numeric' })}
                     disabled
                   />
                 </h4>
@@ -93,6 +98,20 @@ const CreateContract = () => {
                     }}
                   />
                 </h4>
+                <h4>
+                  <BsFillFileEarmarkMedicalFill className="icon" /> Engine:{' '}
+                  <input
+                    type="text"
+                    placeholder="Enter Engine Number"
+                    value={contract.enginenumber}
+                    onChange={(e) => {
+                      setContract({
+                        ...contract,
+                        enginenumber: e.target.value,
+                      })
+                    }}
+                  />
+                </h4>
               </div>
               <div className="left-profile flex-profile">
                 <h4>
@@ -135,21 +154,51 @@ const CreateContract = () => {
                       })
                     }}
                   />
-                  <h4>
-                    <BsCalendar2DateFill className="icon" /> Contract Date{' '}
-                    <input
-                      type="date"
-                      placeholder="enter email"
-                      value={contract.contractDate}
-                      onChange={(e) => {
-                        setContract({
-                          ...contract,
-                          contractDate: e.target.value,
-                        })
-                      }}
-                    />
-                  </h4>
                 </h4>
+                <h4>
+                  <BsCalendar2DateFill className="icon" /> Contract Date{' '}
+                  <input
+                    type="date"
+                    placeholder="enter email"
+                    value={contract.contractDate}
+                    onChange={(e) => {
+                      setContract({
+                        ...contract,
+                        contractDate: e.target.value,
+                      })
+                    }}
+                  />
+                </h4>
+                <h4>
+                  <BsFillFileEarmarkMedicalFill className="icon" /> Lisense Plate{' '}
+                  <input
+                    type="text"
+                    placeholder="Enter Plate Number"
+                    value={contract.licenseplate}
+                    onChange={(e) => {
+                      setContract({
+                        ...contract,
+                        licenseplate: e.target.value,
+                      })
+                    }}
+                  />
+                </h4>
+                <h4>
+                  <BsFillFileEarmarkMedicalFill className="icon" /> Chassis:{' '}
+                  <input
+                    type="text"
+                    placeholder="Enter Chassis Number"
+                    value={contract.chassisnumber}
+                    onChange={(e) => {
+                      setContract({
+                        ...contract,
+                        chassisnumber: e.target.value,
+                      })
+                    }}
+                  />
+                </h4>
+
+
               </div>
             </div>
           </div>

@@ -1,7 +1,7 @@
 .container-create-contract {
   font-size: 17px;
   background-color: #172439;
-  padding: 10%;
+  padding: 5%;
 }
 
 .container-create-contract h1 {
@@ -16,8 +16,13 @@
 
 .main-create-contract {
   background-color: #fff;
-  padding: 80px;
-  border-radius: 20px;
+  padding: 30px;
+  border-radius: 1px;
+  width:400px;
+  align-items: center;
+  margin:auto;
+  
+  
 }
 
 .flex-profile {
@@ -34,7 +39,7 @@
   display: inline-block;
   border: 1px solid #d1d5db;
   background-color: #f9fafb;
-  border-radius: 10px;
+  border-radius: 1px;
   box-sizing: border-box;
   display: flex;
   width: 100%;
@@ -58,7 +63,7 @@
   height: 50px;
   border: 2px solid #fff;
   background: #172439;
-  border-radius: 25px;
+  border-radius: 1px;
   font-size: 20px;
   color: #e9f4fb;
   font-weight: 700;

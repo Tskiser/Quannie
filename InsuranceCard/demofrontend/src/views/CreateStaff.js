@@ -91,19 +91,6 @@ const CreateStaff = () => {
                   />
                 </h4>
                 <h4>
-                  <BsFillPeopleFill className="input" /> Folk:{" "}
-                  <input
-                    placeholder="enter folk"
-                    value={profileStaff.folk}
-                    onChange={(e) => {
-                      setProfileStaff({
-                        ...profileStaff,
-                        folk: e.target.value,
-                      });
-                    }}
-                  />
-                </h4>
-                <h4>
                   <BsGenderAmbiguous className="icon" /> Gender: <br />
                 </h4>
                 <input
@@ -180,39 +167,7 @@ const CreateStaff = () => {
                 }}
               />
             </h4>
-            <h4>
-              <BsGeoAltFill className="icon" /> City:{" "}
-              <input
-                placeholder="enter city"
-                value={addressStaff.city}
-                onChange={(e) => {
-                  setAddressStaff({ ...addressStaff, city: e.target.value });
-                }}
-              />
-            </h4>
-            <h4>
-              <BsGeoAltFill className="icon" /> District:{" "}
-              <input
-                placeholder="enter district "
-                value={addressStaff.district}
-                onChange={(e) => {
-                  setAddressStaff({
-                    ...addressStaff,
-                    district: e.target.value,
-                  });
-                }}
-              />
-            </h4>
-            <h4>
-              <BsGeoAltFill className="icon" /> Street:{" "}
-              <input
-                placeholder="enter street"
-                value={addressStaff.street}
-                onChange={(e) => {
-                  setAddressStaff({ ...addressStaff, street: e.target.value });
-                }}
-              />
-            </h4>
+
           </div>
           <div className="btn-create-staff">
             <button>Create</button>
