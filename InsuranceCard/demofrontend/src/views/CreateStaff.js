@@ -46,7 +46,7 @@ const CreateStaff = () => {
             <div className="grid grid-cols-2">
               <h4>
                 <BsFillPersonFill className="icon" />
-                Username:{" "}
+                Username{" "}
                 <input
                   placeholder="enter username"
                   value={accountStaff.username}
@@ -59,7 +59,7 @@ const CreateStaff = () => {
                 />
               </h4>
               <h4>
-                <BsShieldLockFill className="icon" /> Password:{" "}
+                <BsShieldLockFill className="icon" /> Password{" "}
                 <input
                   type="password"
                   value={accountStaff.password}
@@ -80,7 +80,7 @@ const CreateStaff = () => {
               <div className="left-profile flex-profile">
                 <h4>
                   <BsFillPersonFill className="icon" />
-                  Name:{" "}
+                  Name{" "}
                   <input
                     placeholder="enter name"
                     value={profileStaff.name}
@@ -93,7 +93,7 @@ const CreateStaff = () => {
                   />
                 </h4>
                 <h4>
-                  <BsFillPeopleFill className="input" /> Folk:{" "}
+                  <BsFillPeopleFill className="input" /> Folk{" "}
                   <input
                     placeholder="enter folk"
                     value={profileStaff.folk}
@@ -127,7 +127,7 @@ const CreateStaff = () => {
               </div>
               <div className="right-profile flex-profile">
                 <h4>
-                  <BsFillCalendarEventFill className="icon" /> Birthday:{" "}
+                  <BsFillCalendarEventFill className="icon" /> Birthday{" "}
                   <input
                     type="date"
                     value={profileStaff.birthday}
@@ -140,7 +140,7 @@ const CreateStaff = () => {
                   />
                 </h4>
                 <h4>
-                  <BsFillTelephoneFill className="icon" /> Phone:{" "}
+                  <BsFillTelephoneFill className="icon" /> Phone{" "}
                   <input
                     type="number"
                     placeholder="enter phone number"
@@ -154,7 +154,7 @@ const CreateStaff = () => {
                   />
                 </h4>
                 <h4>
-                  <BsEnvelopeFill className="icon" /> Email:{" "}
+                  <BsEnvelopeFill className="icon" /> Email{" "}
                   <input
                     type="email"
                     placeholder="enter email"
@@ -174,7 +174,7 @@ const CreateStaff = () => {
             <h2>Addresss</h2>
             <div className="grid grid-cols-2">
               <h4>
-                <BsGeoAltFill className="icon" /> Country:{" "}
+                <BsGeoAltFill className="icon" /> Country{" "}
                 <input
                   placeholder="enter country"
                   value={addressStaff.country}
@@ -187,7 +187,7 @@ const CreateStaff = () => {
                 />
               </h4>
               <h4>
-                <BsGeoAltFill className="icon" /> City:{" "}
+                <BsGeoAltFill className="icon" /> City{" "}
                 <input
                   placeholder="enter city"
                   value={addressStaff.city}
@@ -197,7 +197,7 @@ const CreateStaff = () => {
                 />
               </h4>
               <h4>
-                <BsGeoAltFill className="icon" /> District:{" "}
+                <BsGeoAltFill className="icon" /> District{" "}
                 <input
                   placeholder="enter district "
                   value={addressStaff.district}
@@ -210,7 +210,7 @@ const CreateStaff = () => {
                 />
               </h4>
               <h4>
-                <BsGeoAltFill className="icon" /> Street:{" "}
+                <BsGeoAltFill className="icon" /> Street{" "}
                 <input
                   placeholder="enter street"
                   value={addressStaff.street}
