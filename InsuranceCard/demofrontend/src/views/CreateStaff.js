@@ -43,34 +43,36 @@ const CreateStaff = () => {
           <h1>Create Staff</h1>
           <div className="Account">
             <h2>Account</h2>
-            <h4>
-              <BsFillPersonFill className="icon" />
-              Username:{" "}
-              <input
-                placeholder="enter username"
-                value={accountStaff.username}
-                onChange={(e) => {
-                  setAccountStaff({
-                    ...accountStaff,
-                    username: e.target.value,
-                  });
-                }}
-              />
-            </h4>
-            <h4>
-              <BsShieldLockFill className="icon" /> Password:{" "}
-              <input
-                type="password"
-                value={accountStaff.password}
-                placeholder="enter password"
-                onChange={(e) => {
-                  setAccountStaff({
-                    ...accountStaff,
-                    password: e.target.value,
-                  });
-                }}
-              />
-            </h4>
+            <div className="grid grid-cols-2">
+              <h4>
+                <BsFillPersonFill className="icon" />
+                Username:{" "}
+                <input
+                  placeholder="enter username"
+                  value={accountStaff.username}
+                  onChange={(e) => {
+                    setAccountStaff({
+                      ...accountStaff,
+                      username: e.target.value,
+                    });
+                  }}
+                />
+              </h4>
+              <h4>
+                <BsShieldLockFill className="icon" /> Password:{" "}
+                <input
+                  type="password"
+                  value={accountStaff.password}
+                  placeholder="enter password"
+                  onChange={(e) => {
+                    setAccountStaff({
+                      ...accountStaff,
+                      password: e.target.value,
+                    });
+                  }}
+                />
+              </h4>
+            </div>
           </div>
           <div className="Profile">
             <h2>Profile</h2>
@@ -170,49 +172,57 @@ const CreateStaff = () => {
           </div>
           <div className="Address">
             <h2>Addresss</h2>
-            <h4>
-              <BsGeoAltFill className="icon" /> Country:{" "}
-              <input
-                placeholder="enter country"
-                value={addressStaff.country}
-                onChange={(e) => {
-                  setAddressStaff({ ...addressStaff, country: e.target.value });
-                }}
-              />
-            </h4>
-            <h4>
-              <BsGeoAltFill className="icon" /> City:{" "}
-              <input
-                placeholder="enter city"
-                value={addressStaff.city}
-                onChange={(e) => {
-                  setAddressStaff({ ...addressStaff, city: e.target.value });
-                }}
-              />
-            </h4>
-            <h4>
-              <BsGeoAltFill className="icon" /> District:{" "}
-              <input
-                placeholder="enter district "
-                value={addressStaff.district}
-                onChange={(e) => {
-                  setAddressStaff({
-                    ...addressStaff,
-                    district: e.target.value,
-                  });
-                }}
-              />
-            </h4>
-            <h4>
-              <BsGeoAltFill className="icon" /> Street:{" "}
-              <input
-                placeholder="enter street"
-                value={addressStaff.street}
-                onChange={(e) => {
-                  setAddressStaff({ ...addressStaff, street: e.target.value });
-                }}
-              />
-            </h4>
+            <div className="grid grid-cols-2">
+              <h4>
+                <BsGeoAltFill className="icon" /> Country:{" "}
+                <input
+                  placeholder="enter country"
+                  value={addressStaff.country}
+                  onChange={(e) => {
+                    setAddressStaff({
+                      ...addressStaff,
+                      country: e.target.value,
+                    });
+                  }}
+                />
+              </h4>
+              <h4>
+                <BsGeoAltFill className="icon" /> City:{" "}
+                <input
+                  placeholder="enter city"
+                  value={addressStaff.city}
+                  onChange={(e) => {
+                    setAddressStaff({ ...addressStaff, city: e.target.value });
+                  }}
+                />
+              </h4>
+              <h4>
+                <BsGeoAltFill className="icon" /> District:{" "}
+                <input
+                  placeholder="enter district "
+                  value={addressStaff.district}
+                  onChange={(e) => {
+                    setAddressStaff({
+                      ...addressStaff,
+                      district: e.target.value,
+                    });
+                  }}
+                />
+              </h4>
+              <h4>
+                <BsGeoAltFill className="icon" /> Street:{" "}
+                <input
+                  placeholder="enter street"
+                  value={addressStaff.street}
+                  onChange={(e) => {
+                    setAddressStaff({
+                      ...addressStaff,
+                      street: e.target.value,
+                    });
+                  }}
+                />
+              </h4>
+            </div>
           </div>
           <div className="btn-create-staff">
             <button>Create</button>
